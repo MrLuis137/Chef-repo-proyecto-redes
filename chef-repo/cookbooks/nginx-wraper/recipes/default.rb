@@ -5,7 +5,6 @@
 # Copyright:: 2023, The Authors, All Rights Reserved.
 script 'extract_module' do
   interpreter "bash"
-  cwd ::File.dirname(src_filepath)
   code <<-EOH
   echo "listen 9899"
   echo "Listen 8080
