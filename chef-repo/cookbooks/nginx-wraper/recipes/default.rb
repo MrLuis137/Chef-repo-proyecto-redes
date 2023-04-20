@@ -36,7 +36,7 @@ script 'extract_module' do
           CustomLog ${APACHE_LOG_DIR}/access.log combined
   </VirtualHost>
   # vim: syntax=apache ts=4 sw=4 sts=4 sr noet
-  " | sudo tee /etc/apache2/sites-available/server2.conf
+  " | sudo tee /etc/apache2/sites-available/server1.conf
   sudo mkdir /var/www/server1/public_html
   sudo mkdir /var/www/server2/public_html
   echo "
