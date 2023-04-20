@@ -52,7 +52,6 @@ script 'extract_module' do
   sudo systemctl enable apache
   systemctl restart apache2
   EOH
-  not_if { ::File.exist?(extract_path) }
 end
 
 package 'nginx' do
